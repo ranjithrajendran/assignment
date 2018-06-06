@@ -63,8 +63,9 @@
 							</td>
 							<td>
 								<input type="button" value='.' onclick="calc.exp.value += '.'">
-							</td><td>
-								<input type="button" value='=' onclick="calc.exp.value = eval(calc.exp.value)">
+							</td>
+							<td>
+								<input type="button" value='%' onclick="calc.exp.value += '%'">
 							</td>
 							<td>
 								<input type="button" value='+' onclick="calc.exp.value += '+'">
@@ -75,7 +76,7 @@
 								<input type="button" value="ALL CLEAR" onclick="calc.exp.value = ''">
 							</td>
 							<td colspan='2'>
-								<input type="button" value="..DELETE.." onclick="calc.exp.value = ''">
+								<input type="button" value='GET RESULT' onclick="calc.exp.value = eval(calc.exp.value)">
 							</td>
 						</tr>
 					</table>
