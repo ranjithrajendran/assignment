@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATOR</title>
+</head>
+<body>
+	<br>
+	<form name='calc'>
+		<table>
+			<tr>
+				<td colspan="7">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+				<td>
+					<table>
+						
+						<tr>
+							<td colspan="4">
+								<input type="text" name="exp" placeholder="enter expression">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="1">
+								<input type="button" value='7' onclick="calc.exp.value += '7'">
+							</td>
+							<td>
+								<input type="button" value='8' onclick="calc.exp.value += '8'">
+							</td>
+							<td>
+								<input type="button" value='9' onclick="calc.exp.value += '9'">
+							</td>
+							<td>
+								<input type="button" value='/' onclick="calc.exp.value += '/'">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" value='4' onclick="calc.exp.value += '4'">
+							</td>
+							<td>
+								<input type="button" value='5' onclick="calc.exp.value += '5'">
+							</td><td>
+								<input type="button" value='6' onclick="calc.exp.value += '6'">
+							</td>
+							<td>
+								<input type="button" value='*' onclick="calc.exp.value += '*'">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" value='1' onclick="calc.exp.value += '1'">
+							</td>
+							<td>
+								<input type="button" value='2' onclick="calc.exp.value += '2'">
+							</td><td>
+								<input type="button" value='3' onclick="calc.exp.value += '3'">
+							</td>
+							<td>
+								<input type="button" value='-' onclick="calc.exp.value += '-'">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" value='0' onclick="calc.exp.value += '0'">
+							</td>
+							<td>
+								<input type="button" value='.' onclick="calc.exp.value += '.'">
+							</td>
+							<td>
+								<input type="button" value='%' onclick="calc.exp.value += '%'">
+							</td>
+							<td>
+								<input type="button" value='+' onclick="calc.exp.value += '+'">
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2'>
+								<input type="button" value="ALL CLEAR" onclick="calc.exp.value = ''">
+							</td>
+							<td colspan='2'>
+								<input type="button" value='GET RESULT' onclick="calc.exp.value = eval(calc.exp.value)">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
